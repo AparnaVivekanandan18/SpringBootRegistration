@@ -5,9 +5,11 @@ import org.springframework.stereotype.Service;
 import com.registration.registration.repository.StudentRepository;
 import com.registration.registration.model.Student;
 @Service
-public class StudentService {
+public class StudentService
+{
     @Autowired
     private StudentRepository repository;
+
     public void save(Student student) {
         repository.save(student);
     }
